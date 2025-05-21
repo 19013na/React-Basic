@@ -1,11 +1,16 @@
 import './App.css'
+import MyComponent from './components/MyComponent'
+import MyComponentFunc from './components/MyComponentFunc'
 
 function App() {
-  let text = "Dev-Server"
   return (
     <>
-      <h1>Hello ReactJS</h1>
-      <h2>Hello2 {text}</h2>
+      <MyComponent name="ReactJS"/>
+      <MyComponent age={100}/>
+      <hr/>
+      <MyComponentFunc name="I'm 함수형">
+        <p>함수형의 하위 엘리먼트</p>
+      </MyComponentFunc>
     </>
   )
 }
